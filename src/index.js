@@ -1,8 +1,8 @@
-function displayPoem(respose) {
-  console.log("poem generatared");
+function displayPoem(response) {
+  console.log("poem generatated");
 
   new Typewriter("#poem", {
-    strings: Response.data.answer,
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
@@ -16,10 +16,10 @@ function generatePoem(event) {
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "5c9fa8tb15a0808c494ddd28db3adc8o";
-  let prompt = `Generate a Portuguese poem about ${instructionsInput.value} `;
+  let prompt = `Generate a Portuguese poem about ${instructionsInput.value}`;
   let context =
-    "User instructions: You are a romantic Poem expert and love to write poems. Your mission is to generate a 4 line poem in basic HTML.Make sure to follow the user instructions.";
-  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`;
+    "User instructions: You are a romantic Poem expert and love to write poems. Your mission is to generate a 4 line poem in basic HTML. Make sure to follow the user instructions.";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
