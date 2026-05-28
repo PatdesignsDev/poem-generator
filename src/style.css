@@ -65,6 +65,10 @@ a {
   line-height: 24px;
 }
 
+.poem strong {
+  color:#ff00c8
+}
+
 footer {
   font-size: 12px;
   text-align: center;
