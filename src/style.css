@@ -33,9 +33,8 @@ form {
 }
 
 .hint {
-  line-height: 1.5;
+  line-height: 15px;
   margin-top: 5px;
-  margin-left: 5px;
   opacity: 0.5;
   font-size: 11px;
 }
@@ -88,4 +87,20 @@ footer {
   font-size: 12px;
   text-align: center;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps (5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
