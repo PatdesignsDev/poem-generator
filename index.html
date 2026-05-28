@@ -17,22 +17,25 @@
   <body>
     <div class="container">
       <header>
-        <h1>AI P💖EM GENERATOR</h1>
+        <h1>AI Portuguese P💖EM GENERATOR</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder=" Enter the topic of the Portuguese Poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            ID="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder=" Enter the topic of the Portuguese Poem you'd like to generate"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <div class="hint"> i.e: Amor, coração, tocar</div>
+          </form>
+        </div>
+
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This was coded by

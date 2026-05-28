@@ -20,13 +20,24 @@ h1 {
   color: #ff00c8;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 12px;
-  display: flex;
   margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-left: 5px;
+  opacity: 0.5;
+  font-size: 11px;
 }
 
 a {
@@ -37,7 +48,7 @@ a {
   padding: 16px;
   border: 1px solid #ff85e5;
   width: 80%;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 50px;
   line-height: 20px;
   color: rgb(37, 37, 37);
@@ -65,8 +76,12 @@ a {
   line-height: 24px;
 }
 
+.hidden {
+  display: none;
+}
+
 .poem strong {
-  color:#ff00c8
+  color: #ff00c8;
 }
 
 footer {

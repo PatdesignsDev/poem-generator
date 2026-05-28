@@ -21,6 +21,9 @@ function generatePoem(event) {
     "User instructions: You are a romantic Poem expert. Generate a 4 line poem in HTML using <p> tags only. Do not use markdown, do not use code blocks, do not include backticks. End the poem with a <p> signed by `SheCodes AI` inside a <strong> element. Only return HTML, nothing else.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
